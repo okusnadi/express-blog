@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html ng-app="routeApp">
+<head>
+  <meta charset="utf-8">
+  <title>route</title>
+  <script src="/javascripts/lib/angular.min.js"></script>
+
+  <script type="text/javascript">
+
+var app = angular.module("routeApp", []);
+
+app.factory('testfactory', function($http,$q) {
+    var servcie = {};
+    var count = 0;
+
+
+      var deferred = $q.defer()
+    servcie.get = function()
+    {
+          $http({
+      method:"get",
+      url:"http://127.0.0.1:3000/admin/tags2/query"
+    }).success(function(data))
+    {}).error(function(
+      ){
+
+
+
+
+    })
+    }
+
+});
+
+
+
+app.controller('ApplicationController', function($scope) {
+
+  $scope.test = function()
+  {
+   var xx = testfactory()
+     testfactory.set()
+     alert(testfactory.get())
+
+  }
+
+
+});
+
+
+
+
+  </script>
+
+</head>
+<body ng-controller="ApplicationController">
+  <button ng-click="test()">测试</button>
+</body>
+
+</html>

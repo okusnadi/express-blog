@@ -1,0 +1,12 @@
+<ng-include src="'home/navber.html'" ng-controller="HomeNavberController"></ng-include>
+<div class="container">
+  <div class="row">
+    <div class="col-md-2">
+      <ng-include src="'home/sidebar.html'" ng-controller="HomeSidebarController"></ng-include>
+    </div>
+    <div class="col-md-10">
+      <ng-include src="'home/content.html'" ng-controller="HomeContentController"></ng-include>
+    </div>
+  </div>
+</div>
+<ng-include src="'home/footer.html'" ng-controller="HomeFooterController"></ng-include>

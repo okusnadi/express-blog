@@ -1,0 +1,1258 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"updt",
+				"updated_at"
+			],
+			[
+				"co",
+				"console"
+			],
+			[
+				"on",
+				"onclick	Attr"
+			],
+			[
+				"v",
+				"vertical-align"
+			],
+			[
+				"it",
+				"item"
+			],
+			[
+				"em",
+				"element"
+			],
+			[
+				"nae",
+				"name"
+			],
+			[
+				"stat",
+				"status"
+			],
+			[
+				"ce",
+				"check"
+			],
+			[
+				"has",
+				"haslogged"
+			],
+			[
+				"lg",
+				"login"
+			],
+			[
+				"lo",
+				"login"
+			],
+			[
+				"cu",
+				"current"
+			],
+			[
+				"a",
+				"action	Attr"
+			],
+			[
+				"un",
+				"undefined"
+			],
+			[
+				"CON",
+				"console"
+			],
+			[
+				"th",
+				"thead	Tag"
+			],
+			[
+				"tag",
+				"tags"
+			],
+			[
+				"get",
+				"get	Get Elements"
+			],
+			[
+				"par",
+				"parent	.parent()"
+			],
+			[
+				"f",
+				"form	Tag"
+			],
+			[
+				"for",
+				"form	Tag"
+			],
+			[
+				"ar",
+				"attr	.attr() - single"
+			],
+			[
+				"data",
+				"data-id"
+			],
+			[
+				"ma",
+				"makeCell"
+			],
+			[
+				"li",
+				"link	Tag"
+			],
+			[
+				"end",
+				"encoding"
+			],
+			[
+				"fil",
+				"files"
+			],
+			[
+				"pa",
+				"pathList"
+			],
+			[
+				"ind",
+				"indexOf"
+			],
+			[
+				"nu",
+				"nextUntil	.nextUntil()"
+			],
+			[
+				"cs",
+				"css	.css() - single"
+			],
+			[
+				"t",
+				"transparent"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"bor",
+				"border"
+			],
+			[
+				"r",
+				"relative"
+			],
+			[
+				"fo",
+				"focus	.focus()"
+			],
+			[
+				"mar",
+				"margin-bottom"
+			],
+			[
+				"do",
+				"dom"
+			],
+			[
+				"at",
+				"attr	.attr() - single"
+			],
+			[
+				"z",
+				"z-index"
+			],
+			[
+				"d",
+				"div	Tag"
+			],
+			[
+				"b",
+				"block"
+			],
+			[
+				"wr",
+				"write"
+			],
+			[
+				"ea",
+				"each	.each()"
+			],
+			[
+				"se",
+				"self"
+			],
+			[
+				"he",
+				"helper"
+			],
+			[
+				"cha",
+				"character"
+			],
+			[
+				"ob",
+				"Object"
+			],
+			[
+				"bar",
+				"bar3"
+			],
+			[
+				"foo",
+				"foo33"
+			],
+			[
+				"cl",
+				"clear"
+			],
+			[
+				"ti",
+				"tips"
+			],
+			[
+				"sur",
+				"SuccessColor"
+			],
+			[
+				"IN",
+				"input"
+			],
+			[
+				"add",
+				"addWords"
+			],
+			[
+				"eac",
+				"each	$.each()"
+			],
+			[
+				"sub",
+				"substr"
+			],
+			[
+				"las",
+				"last-child"
+			],
+			[
+				"fid",
+				"find	.find()"
+			],
+			[
+				"w",
+				"words"
+			],
+			[
+				"arr",
+				"Array"
+			],
+			[
+				"wd",
+				"word"
+			],
+			[
+				"as",
+				"ascii_width"
+			],
+			[
+				"in",
+				"input"
+			],
+			[
+				"border-le",
+				"border-left-width"
+			],
+			[
+				"border-l",
+				"border-left-width"
+			],
+			[
+				"pd",
+				"padding"
+			],
+			[
+				"one",
+				"none"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"border-b",
+				"border-bottom"
+			],
+			[
+				"ex",
+				"existsInputCell"
+			],
+			[
+				"p",
+				"pos"
+			],
+			[
+				"de",
+				"defaults"
+			],
+			[
+				"fi",
+				"first-child"
+			],
+			[
+				"pu",
+				"plus"
+			],
+			[
+				"clas",
+				"class1"
+			],
+			[
+				"clo",
+				"console"
+			],
+			[
+				"po",
+				"pos"
+			],
+			[
+				"s",
+				"status"
+			],
+			[
+				"tr",
+				"true"
+			],
+			[
+				"wh",
+				"while"
+			],
+			[
+				"br",
+				"break"
+			],
+			[
+				"VA",
+				"val"
+			],
+			[
+				"su",
+				"substr"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"fa",
+				"false"
+			],
+			[
+				"c",
+				"click	.click()"
+			],
+			[
+				"val",
+				"value"
+			],
+			[
+				"con",
+				"console"
+			],
+			[
+				"fou",
+				"focus	.focus()"
+			],
+			[
+				"cols",
+				"console"
+			],
+			[
+				"pra",
+				"parent	.parent()"
+			],
+			[
+				"l",
+				"left"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"fl",
+				"float"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"key",
+				"keydown	.keydown()"
+			],
+			[
+				"log",
+				"loading"
+			],
+			[
+				"Lo",
+				"loading"
+			],
+			[
+				"red",
+				"ready	$(document).ready"
+			],
+			[
+				"h",
+				"html	.html()"
+			],
+			[
+				"html",
+				"html	.html()"
+			],
+			[
+				"foe",
+				"footer	Tag"
+			],
+			[
+				"bt",
+				"bs3-table	bs3-table"
+			],
+			[
+				"bs3-l",
+				"bs3-label	bs3-label"
+			],
+			[
+				"padd",
+				"padding-left"
+			],
+			[
+				"ec",
+				"each	$.each()"
+			],
+			[
+				"ses",
+				"session_id"
+			],
+			[
+				"pass",
+				"password"
+			],
+			[
+				"fu",
+				"function"
+			],
+			[
+				"jq",
+				"jQuery.ajax	jQuery.ajax"
+			],
+			[
+				"sc",
+				"script	Tag"
+			],
+			[
+				"isn",
+				"is_null"
+			],
+			[
+				"corl",
+				"color"
+			],
+			[
+				"bo",
+				"bs3-col	bs3-col"
+			],
+			[
+				"reu",
+				"return"
+			],
+			[
+				"ret",
+				"return"
+			],
+			[
+				"mes",
+				"MessageBoard"
+			],
+			[
+				"prin",
+				"print_r"
+			],
+			[
+				"i",
+				"if	<?php if (…) ?> … <?php endif ?>"
+			],
+			[
+				"m",
+				"margin"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "var express = require('express');\nvar cookieParser = require('cookie-parser');\nvar bodyParser = require('body-parser');\nvar session = require('express-session')\nvar csrf = require('csrf');\nvar app = express();\n\napp.use(bodyParser.json());\napp.use(bodyParser.urlencoded({\n    extended: false\n}));\napp.use(cookieParser());\napp.use(session({\n    secret: 'keyboard cat',\n    cookie: {\n        maxAge: 1000 * 60 * 10\n    },\n    resave: false,\n    saveUninitialized: true\n}))\n\napp.use(csrf())\n\napp.use(function(err, req, res, next) {\n\n    if (err !== 5555) return next(err)\n\n    res.status(401).send('csrf failure')\n});\n\nmodule.exports = app;",
+			"file": "/E/P/nodejs/express-easy-csrf/app.js",
+			"file_size": 636,
+			"file_write_time": 130896559791454406,
+			"settings":
+			{
+				"buffer_size": 636,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "public/javascripts/admin/controller/haslogged.js",
+			"settings":
+			{
+				"buffer_size": 556,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "node_modules/csurf/index.js",
+			"settings":
+			{
+				"buffer_size": 5745,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "Package Control: ",
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"tab",
+				"Tabify"
+			],
+			[
+				"lar",
+				"Laravel Artisan: Migrate"
+			],
+			[
+				"phpf",
+				"phpfmt: refactor"
+			],
+			[
+				"php",
+				"phpfmt: refactor"
+			],
+			[
+				"Package Control",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: e",
+				"Package Control: Enable Package"
+			],
+			[
+				"bst",
+				"Snippet: bs3-input-tel"
+			],
+			[
+				"filez",
+				"SublimeZilla: Import FileZilla Server"
+			],
+			[
+				"file",
+				"SublimeZilla: Import FileZilla Server"
+			],
+			[
+				"Package Control: d",
+				"Package Control: Disable Package"
+			],
+			[
+				"git c",
+				"Git: Checkout Commit"
+			],
+			[
+				"git:ad",
+				"Git: Amend Commit"
+			],
+			[
+				"git:",
+				"Git: Push"
+			],
+			[
+				"git:p",
+				"Git: Push"
+			],
+			[
+				"git:c",
+				"Git: Commit"
+			],
+			[
+				"git",
+				"Git: Init"
+			],
+			[
+				"g",
+				"Git: Init"
+			],
+			[
+				"jq",
+				"Snippet: jQuery.ajax"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Preferences: Browse Packages"
+			]
+		],
+		"width": 488.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())",
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); proxyConfig = 'http://%s:%s' % ('proxy_host', proxy_port);proxyHandler=urllib.request.ProxyHandler({'http':proxyConfig});defaultHTTPPasswordMgr=urllib.request.HTTPPasswordMgrWithDefaultRealm();proxy_auth_handler = urllib.request.ProxyBasicAuthHandler(defaultHTTPPasswordMgr);proxy_auth_handler.add_password(None, proxyConfig, 'proxy_auth_user', 'proxy_auth_password') ;urllib.request.install_opener( urllib.request.build_opener( proxy_handler,proxy_auth_handler )); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())",
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())",
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); proxyConfig = 'http://%s:%s' % ('proxy_host', proxy_port);proxyHandler=urllib.request.ProxyHandler({'http':proxyConfig});defaultHTTPPasswordMgr=urllib.request.HTTPPasswordMgrWithDefaultRealm();proxy_auth_handler = urllib.request.ProxyBasicAuthHandler(defaultHTTPPasswordMgr);proxy_auth_handler.add_password(None, proxyConfig, 'proxy_auth_user', 'proxy_auth_password') ;urllib.request.install_opener( urllib.request.build_opener( proxy_handler,proxy_auth_handler )); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())",
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())",
+			"import urllib.request,os; pf = 'PackageControl.sublime-package'; ipp = sublime.installed_packages_path();urllib.request.install_opener( urllib.request.build_opener(urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf),'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace('','%20')).read())"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/E/P/nodejs/app",
+		"/E/P/nodejs/app/bin",
+		"/E/P/nodejs/app/public",
+		"/E/P/nodejs/app/public/images",
+		"/E/P/nodejs/app/public/images/views",
+		"/E/P/nodejs/app/public/javascripts",
+		"/E/P/nodejs/app/public/javascripts/admin",
+		"/E/P/nodejs/app/public/javascripts/admin/controller",
+		"/E/P/nodejs/app/public/javascripts/admin/object",
+		"/E/P/nodejs/app/public/stylesheets",
+		"/E/P/nodejs/app/public/views",
+		"/E/P/nodejs/app/node_modules/model"
+	],
+	"file_history":
+	[
+		"/E/P/nodejs/express-easy-csrf/node_modules/csrf/index.js",
+		"/E/P/nodejs/express-easy-csrf/index.js",
+		"/E/P/nodejs/express-easy-csrf/.gitignore",
+		"/E/P/nodejs/express-easy-csrf/.git/info/exclude",
+		"/E/P/nodejs/express-easy-csrf/.git/config",
+		"/E/P/nodejs/express-easy-csrf/.git/HEAD",
+		"/E/P/nodejs/express-easy-csrf/.git/description",
+		"/E/P/nodejs/app/node_modules/model/libcsrf.js",
+		"/E/P/nodejs/app/node_modules/model/libauth.js",
+		"/E/P/nodejs/csrf/index.js",
+		"/E/P/nodejs/express-easy-csrf/node_modules/lib/csrf.js",
+		"/E/P/nodejs/express-easy-csrf/libcsrf.js",
+		"/E/P/nodejs/angularjs-demo/app.js",
+		"/E/P/nodejs/angularjs-demo/run.bat",
+		"/C/Users/Administrator/AppData/Roaming/npm/node_modules/connect/node_modules/finalhandler/index.js",
+		"/C/Users/Administrator/AppData/Roaming/npm/node_modules/connect/node_modules/parseurl/index.js",
+		"/E/P/nodejs/angularjs-demo/node_modules/connect/index.js",
+		"/E/P/nodejs/angularjs-demo/package.json",
+		"/C/Users/Administrator/AppData/Roaming/npm/node_modules/connect/node_modules/utils-merge/package.json",
+		"/C/Users/Administrator/AppData/Roaming/npm/node_modules/connect/index.js",
+		"/C/Users/Administrator/AppData/Roaming/npm/node_modules/connect/node_modules/utils-merge/index.js",
+		"/C/Users/Administrator/AppData/Roaming/npm/node_modules/connect/package.json",
+		"/E/P/nodejs/angularjs-demo/node_modules/express/package.json",
+		"/E/P/nodejs/angularjs-demo/bin/www",
+		"/E/P/nodejs/app3/package.json",
+		"/E/P/nodejs/app/public/images/factory_test.html~",
+		"/E/Dropbox/新建文件夹/.ssh/id_rsa.pub",
+		"/E/P/nodejs/app/routes/admin/tags2.js",
+		"/E/P/nodejs/app/node_modules/model/tags2.js",
+		"/E/P/nodejs/app/node_modules/model/aorm.js",
+		"/E/P/nodejs/app/node_modules/model/amysql.js",
+		"/E/P/nodejs/app/public/javascripts/admin/controller/tags.js",
+		"/E/P/nodejs/app/public/images/factory_test.html",
+		"/E/P/nodejs/app/node_modules/model/articles.js",
+		"/E/P/nodejs/app/routes/admin/tags.js",
+		"/E/P/nodejs/app/app.js",
+		"/E/P/nodejs/app/node_modules/model/amysqlconfig.js",
+		"/E/P/nodejs/app/node_modules/model/1.sql",
+		"/E/P/nodejs/app/node_modules/model/libmysql.js",
+		"/E/P/nodejs/app/public/views/admin/articles/update.html",
+		"/E/P/nodejs/app/public/javascripts/admin/controller/articles.js",
+		"/E/P/nodejs/app/public/javascripts/admin/controller.js",
+		"/E/P/nodejs/app/public/views/admin/articles/insert.html",
+		"/E/P/nodejs/app/public/javascripts/admin/app.js",
+		"/E/P/nodejs/app/public/javascripts/admin/router.js",
+		"/E/P/nodejs/app/public/views/admin/index.html",
+		"/E/P/nodejs/app/public/javascripts/admin/object/articles.js",
+		"/E/P/nodejs/app/routes/admin/articles.js",
+		"/C/Users/Administrator/Downloads/EpicEditor-develop/EpicEditor-develop/index.html",
+		"/E/P/nodejs/app/public/javascripts/admin/markdown.js",
+		"/C/Users/Administrator/Downloads/EpicEditor-develop/EpicEditor-develop/docs/js/main.js",
+		"/E/P/nodejs/app/public/javascripts/admin/static.js",
+		"/E/P/nodejs/app/public/stylesheets/index.html",
+		"/E/P/nodejs/app/public/views/admin/articles/index.html",
+		"/C/Users/Administrator/Downloads/EpicEditor-v0.2.2/EpicEditor-v0.2.2/themes/base/epiceditor.css",
+		"/E/1.html",
+		"/E/P/nodejs/app/public/stylesheets/bootstrap-markdown.min.css",
+		"/C/Users/Administrator/Downloads/toopay-bootstrap-markdown-v2.9.0-11-g6bd6e62/toopay-bootstrap-markdown-6bd6e62/js/bootstrap-markdown.js",
+		"/E/P/nodejs/app/public/stylesheets/custom.css",
+		"/E/P/nodejs/app/public/javascripts/admin/factory.js",
+		"/E/P/nodejs/public/javascripts/admin/factory.js",
+		"/E/P/nodejs/public/javascripts/admin/controller.js",
+		"/E/P/nodejs/app/public/javascripts/admin/controller/login.js",
+		"/E/P/nodejs/app/public/javascripts/admin/controller/haslogged.js",
+		"/E/P/nodejs/app/public/views/admin/auth/login.html",
+		"/E/P/nodejs/app/public/javascripts/admin/controller/categories.js",
+		"/E/P/nodejs/app/public/views/admin/home/home.html",
+		"/E/P/nodejs/app/public/javascripts/admin/controller/home.js",
+		"/E/P/nodejs/app/public/views/admin/categories/update.html",
+		"/E/P/nodejs/app/public/views/admin/tags/index.html",
+		"/E/P/nodejs/app/public/views/admin/tags/insert.html",
+		"/E/P/nodejs/app/public/views/admin/home/footer.html",
+		"/E/P/nodejs/app/public/javascripts/admin/controller/haslogged,js",
+		"/E/P/nodejs/app/public/javascripts/admin/auth.js",
+		"/E/P/nodejs/app/public/javascripts/admin/home.js",
+		"/E/P/nodejs/app/routes/admin/categories.js",
+		"/E/P/nodejs/app/public/views/admin/categories/index.html",
+		"/E/P/nodejs/bak/app1/app.js",
+		"/C/Users/Administrator/Downloads/ocLazyLoad-master/ocLazyLoad-master/examples/complexExample/js/app.js",
+		"/C/Users/Administrator/Downloads/ocLazyLoad-master/ocLazyLoad-master/examples/complexExample/index.html",
+		"/C/Users/Administrator/Downloads/ocLazyLoad-master/ocLazyLoad-master/examples/complexExample/js/AppCtrl.js",
+		"/C/Users/Administrator/Downloads/ocLazyLoad-master/ocLazyLoad-master/examples/requireJSExample/js/lazymodule.js",
+		"/C/Users/Administrator/Downloads/ocLazyLoad-master/ocLazyLoad-master/examples/requireJSExample/js/main.js",
+		"/C/Users/Administrator/Downloads/ocLazyLoad-master/ocLazyLoad-master/examples/requireJSExample/index.html",
+		"/C/Users/Administrator/Downloads/ocLazyLoad-master/ocLazyLoad-master/examples/simpleExample/js/testApp.js",
+		"/C/Users/Administrator/Downloads/ocLazyLoad-master/ocLazyLoad-master/dist/ocLazyLoad.min.js",
+		"/C/Users/Administrator/Downloads/ocLazyLoad-master/ocLazyLoad-master/examples/simpleExample/index.html",
+		"/C/Users/Administrator/Downloads/ocLazyLoad-master/ocLazyLoad-master/src/ocLazyLoad.loaders.requireJSLoader.js",
+		"/C/Users/Administrator/Downloads/ocLazyLoad-master/ocLazyLoad-master/src/ocLazyLoad.loaders.core.js",
+		"/C/Users/Administrator/Downloads/ocLazyLoad-master/ocLazyLoad-master/src/ocLazyLoad.loaders.jsLoader.js",
+		"/E/P/nodejs/app/node_modules/model/categories.js",
+		"/E/P/nodejs/app/public/views/admin/tags/update.html",
+		"/E/P/nodejs/bak/app1/public/javascripts/Initialization.js",
+		"/E/P/nodejs/app/public/views/admin/template/sidebar.html",
+		"/E/P/nodejs/app/public/views/admin/template/content.html",
+		"/E/P/nodejs/app/public/views/admin/template/navber.html",
+		"/E/P/nodejs/bak/app1/public/views/admin/template/sidebar.html",
+		"/E/P/nodejs/bak/app1/public/views/admin/template/footer.html",
+		"/E/P/nodejs/bak/app1/public/views/admin/template/content.html",
+		"/E/P/nodejs/bak/app1/public/views/admin/index2.html",
+		"/E/P/nodejs/app/routes/admin/auth.js",
+		"/E/P/nodejs/bak/app1/public/views/admin/index4.html",
+		"/E/P/nodejs/app/public/views/admin/tags/tagsUpdate.html",
+		"/E/P/nodejs/app/node_modules/model/libfilter.js",
+		"/E/P/nodejs/app/public/views/admin/root.html",
+		"/E/P/nodejs/app/public/views/admin/auth/haslogin.html",
+		"/E/P/nodejs/app/public/images/views/blank.html",
+		"/E/P/nodejs/app/public/images/root.html",
+		"/E/P/nodejs/app/public/images/views/haslogin.html",
+		"/E/P/nodejs/app/public/images/views/login.html",
+		"/E/P/nodejs/app/public/images/views/home.html",
+		"/E/P/nodejs/app/public/images/app.js",
+		"/E/P/nodejs/app/public/images/index.html",
+		"/E/P/nodejs/app/node_modules/csurf/node_modules/csrf/index.js",
+		"/E/P/nodejs/app/node_modules/model/auth.js",
+		"/C/Users/Administrator/Downloads/ui-router.stateHelper-master/ui-router.stateHelper-master/test/statehelperSpec.js",
+		"/E/P/nodejs/app3/app.js",
+		"/E/P/nodejs/app/node_modules/csurf/index.js",
+		"/E/P/nodejs/app3/routes/index.js",
+		"/E/P/nodejs/app3/bin/www",
+		"/E/P/nodejs/app2/package.json",
+		"/E/P/nodejs/app/package.json",
+		"/E/P/nodejs/app/node_modules/morgan/node_modules/basic-auth/LICENSE",
+		"/E/P/nodejs/app/node_modules/async/lib/async.js",
+		"/E/P/nodejs/app/node_modules/express-session/node_modules/parseurl/index.js",
+		"/E/P/nodejs/app/node_modules/express-session/node_modules/cookie/index.js",
+		"/E/P/nodejs/app/node_modules/express-session/session/cookie.js",
+		"/E/P/nodejs/app/node_modules/express-session/index.js"
+	],
+	"find":
+	{
+		"height": 38.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"body",
+			"session",
+			"cookies",
+			"csrfSystem",
+			"mainApp",
+			"articles",
+			"tags",
+			"tags2",
+			"e1",
+			"e2",
+			"s2",
+			"s1",
+			"this",
+			"tags2",
+			"blogs",
+			"org",
+			"tags",
+			"exports",
+			"module",
+			".exports",
+			"this",
+			"SQL",
+			"sql",
+			"SQL",
+			"exports",
+			":",
+			"fn",
+			"mysql",
+			"fn",
+			"pool",
+			"response",
+			"SERVER_EVENTS",
+			"insert",
+			"events",
+			"server",
+			"};",
+			"tryItBtn",
+			"google",
+			"hack",
+			"tExt",
+			"text",
+			"showModal",
+			"hashTxt",
+			"categories",
+			"tags",
+			"categories",
+			"tags",
+			"csrfFailed",
+			"token",
+			"Interceptor",
+			"auth",
+			"status404",
+			"status401",
+			"status200",
+			"HTTPResponse",
+			"HTTPResponseUnknown",
+			"SERVER_STATUS",
+			"AUTH_STATUS",
+			"AUTH_EVENTS",
+			"AUTH_EVENTS2",
+			"AUTH_EVENTS",
+			"AUTH_STATUS",
+			"home",
+			"'routeApp'",
+			"rootScope",
+			"scope",
+			"rootScope",
+			"scope",
+			"rootScope",
+			"'routeApp'",
+			"state",
+			"app",
+			"angular",
+			"app",
+			"categorie",
+			"routeApp",
+			"tags",
+			"Tags",
+			"tags",
+			"Tags",
+			"tags",
+			"ChangecsrfToken",
+			"routes",
+			"tag",
+			"$(element)",
+			"tags",
+			"rootScope",
+			"state",
+			"token",
+			"HasLogin",
+			"haslogin",
+			"excludeUrl",
+			"next",
+			"token",
+			"this.req.csrfToken()",
+			"<a",
+			"/a>",
+			"admin",
+			"swig",
+			"contacts",
+			"cookies",
+			"logger",
+			"cookie",
+			"($",
+			"AuthResolver",
+			"authsystem.status",
+			"AuthResolver authsystem.status",
+			"authsystem.status",
+			"status()",
+			"cookieStore",
+			"server",
+			"headers",
+			"session",
+			"csrfTokenFailed",
+			"hasloggedCtrl",
+			"csrfToken",
+			"stringify",
+			"verifytoken",
+			"defaultValue",
+			"verifytoken",
+			"scmp",
+			"csrf-token",
+			"csrfProtection",
+			"transitionTo",
+			"authsystem",
+			"LogincsrfTokenFailed",
+			"AuthResolver",
+			"state"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"",
+			"this",
+			"self",
+			"    fn.prototype",
+			"fn",
+			"",
+			"d86a",
+			"d86",
+			");d86b.push(",
+			"d86a.push(",
+			" ",
+			"[]",
+			"charAt(",
+			"width",
+			"Width",
+			"ename",
+			"",
+			" ",
+			"",
+			"inputValue",
+			"template",
+			"input",
+			"self.defaults.max",
+			"self.defaults.pos",
+			"npos",
+			"opos",
+			"view.input",
+			"",
+			"work",
+			"MessageBoardController",
+			"MessageController",
+			"\\n",
+			"",
+			"\\n",
+			"",
+			"e:/NetBeansProjects"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": false
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/E/P/nodejs/express-easy-csrf/app.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 636,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								78,
+								78
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "public/javascripts/admin/controller/haslogged.js",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 556,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "node_modules/csurf/index.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5745,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3366,
+								3366
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2401.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 30.0
+	},
+	"input":
+	{
+		"height": 324.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "p.sublime-project",
+	"replace":
+	{
+		"height": 56.0
+	},
+	"save_all_on_build": false,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"tags2",
+				"app\\routes\\admin\\tags2.js"
+			],
+			[
+				"tag2",
+				"model\\tags2.js"
+			],
+			[
+				"app",
+				"app\\app.js"
+			],
+			[
+				"tags",
+				"app\\routes\\admin\\tags.js"
+			],
+			[
+				"ap",
+				"app\\app.js"
+			],
+			[
+				"artice",
+				"app\\public\\javascripts\\admin\\controller\\articles.js"
+			],
+			[
+				"aric",
+				"app\\public\\javascripts\\admin\\controller.js"
+			],
+			[
+				"r",
+				"app\\public\\javascripts\\admin\\router.js"
+			],
+			[
+				"index",
+				"app\\public\\views\\admin\\index.html"
+			],
+			[
+				"art",
+				"app\\public\\javascripts\\admin\\controller\\articles.js"
+			],
+			[
+				"user",
+				"Model\\User.php"
+			],
+			[
+				"authenticates",
+				"vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Auth\\AuthenticatesUsers.php"
+			],
+			[
+				"",
+				"app\\Http\\Middleware\\Authenticate.php"
+			],
+			[
+				"authenticatesandregistersusers",
+				"vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Auth\\AuthenticatesAndRegistersUsers.php"
+			],
+			[
+				"customauth.php",
+				"vendor\\phpdocumentor\\reflection-docblock\\src\\phpDocumentor\\Reflection\\DocBlock\\Tag\\AuthorTag.php"
+			],
+			[
+				"postlogin",
+				"vendor\\swiftmailer\\swiftmailer\\lib\\classes\\Swift\\Transport\\Esmtp\\Auth\\LoginAuthenticator.php"
+			],
+			[
+				"index.",
+				"resources\\views\\admin\\index.blade.php"
+			],
+			[
+				"scope",
+				"vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\ScopeInterface.php"
+			],
+			[
+				"illuminate/database/query/builder",
+				"vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Builder.php"
+			],
+			[
+				"lengthawarepaginator",
+				"vendor\\laravel\\framework\\src\\Illuminate\\Pagination\\LengthAwarePaginator.php"
+			],
+			[
+				"illuminate/pagination/bootstrapthreepresenter",
+				"vendor\\laravel\\framework\\src\\Illuminate\\Pagination\\SimpleBootstrapThreePresenter.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 316.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

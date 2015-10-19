@@ -1,0 +1,26 @@
+{
+	"folders":
+	[
+		{
+			"path": ".",
+      "name": "app",
+      "file_exclude_patterns":[],
+      "folder_exclude_patterns":
+      [
+         "node_modules"
+      ]
+		},
+    {
+      "path": "node_modules/model",
+      "name": "model",
+      "file_exclude_patterns":[],
+      "folder_exclude_patterns":
+      [
+        // "node_modules"
+      ]
+    }
+
+
+    
+	]
+}

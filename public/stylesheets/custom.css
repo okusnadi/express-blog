@@ -1,0 +1,14 @@
+body {
+  margin-top: 90px;
+}
+
+.center-modal {
+  height: 300px;
+  margin: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  font-size: 18px;
+}

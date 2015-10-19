@@ -1,0 +1,25 @@
+<button class="btn btn-default" ng-click="insert()" tags-Insert-Directive>新增</button>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="form-group" tags-Update-Directive ng-repeat="item in items">
+      <td>
+        <span>{{item.id}}</span>
+      </td>
+      <td>
+        <span>{{item.name}}</span>
+      </td>
+      <td>
+        <button class="btn btn-default" ng-click="update()">修改</button>
+      </td>
+      <td>
+        <button class="btn btn-default" ng-click="delete($index)">删除</button>
+      </td>
+    </tr>
+  </tbody>
+</table>

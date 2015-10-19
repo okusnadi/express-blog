@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"></head>
+<body ng-app="showdown.editor" ng-controller="editorCtrl" squeeze>
+
+  <textarea id="editor" data-ng-model="text"></textarea>
+  <div id="preview" sd-model-to-html="text"></div>
+
+  <script src="//rawgit.com/showdownjs/showdown/master/dist/showdown.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular-sanitize.js"></script>
+  <script src="//rawgit.com/showdownjs/ng-showdown/master/dist/ng-showdown.js"></script>
+
+  <script>
+  var app = angular.module('showdown.editor', ['ng-showdown']);
+  app.controller('editorCtrl', function($scope, $showdown) {
+  $scope.text = '';
+
+});
+
+</script>
+
+</body>
+</html>
