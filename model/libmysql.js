@@ -1,87 +1,89 @@
 var mysql = require("mysql");
+
 var pool = mysql.createPool({
     connectionLimit: 10,
     host: '192.168.18.14',
     port: '3306',
     user: 'root',
     password: '123',
-    database: 'blog'
+    database: 'blog',
+    queryFormat: function(query, values) {
+        if (!values) return query;
+        return query.replace(/\:(\w+)/g, function(txt, key) {
+            if (values.hasOwnProperty(key)) {
+                return this.escape(values[key]);
+            }
+            return txt;
+        }.bind(this));
+    }
 });
 
-console.log("=================");
+console.log("mysql pool start");
 
-var fn = {};
-
-fn.query = function(sql, callback) {
+exports.base = function(sql, data, success, error) {
     pool.getConnection(function(err, conn) {
         if (err) {
-            callback(err, null, null);
+            error(err);
         } else {
-            conn.query(sql, function(qerr, vals, fields) {
-                //释放连接  
+            conn.query(sql, data, function(qerr, qvals, qfields) {
                 conn.release();
-                //事件驱动回调  
-                callback(qerr, vals, fields);
+                if (qerr) {
+                    error(qerr);
+                } else {
+                    success(qvals);
+                }
             });
         }
     });
 };
 
 
-
-
-
-
-
-
-
-fn.Insert = function(sql, value, callback) {
-
-    pool.getConnection(function(err, conn) {
-        if (err) {
-            callback(err, null, null);
-        } else {
-            conn.query(sql, value, function(qerr, vals, fields) {
-                //释放连接  
-                conn.release();
-                //事件驱动回调  
-                callback(qerr, vals, fields);
-            });
-        }
-    });
+exports.query = function(sql, data, success, error) {
+    this.base(sql, data, function(qvals) {
+        success(qvals);
+    }, error);
 };
 
-fn.queryByWith = function(sql, value, callback) {
-
-    pool.getConnection(function(err, conn) {
-        if (err) {
-
-            callback(err, null, null);
-        } else {
-            conn.query(sql, value, function(qerr, vals, fields) {
-                //释放连接  
-                conn.release();
-                //事件驱动回调  
-                callback(qerr, vals, fields);
-            });
-        }
-    });
-};
-fn.queryBy = function(sql, value, callback) {
-
-    pool.getConnection(function(err, conn) {
-        if (err) {
-            callback(err, null, null);
-        } else {
-            conn.query(sql, value, function(qerr, vals, fields) {
-                //释放连接  
-                conn.release();
-                //事件驱动回调  
-                callback(qerr, vals, fields);
-            });
-        }
-    });
+exports.pagerows = function(sql, data, success, error) {
+    this.base(sql, data, function(qvals) {
+        success(qvals[0]);
+    }, error);
 };
 
 
-module.exports = fn;
+exports.get = function(sql, data, success, error) {
+    this.base(sql, data, function(qvals) {
+        if (qvals.length > 0) {
+            success(qvals[0]);
+        } else {
+            success({});
+        }
+    }, error);
+};
+
+
+exports.remove = function(sql, data, success, error) {
+    this.base(sql, data, function(qvals) {
+        success({
+            affected_rows: qvals.affectedRows
+        });
+    }, error);
+};
+
+
+exports.insert = function(sql, data, success, error) {
+    this.base(sql, data, function(qvals) {
+        success({
+            insertid: qvals.insertId
+        });
+    }, error);
+};
+
+
+exports.update = function(sql, data, success, error) {
+    this.base(sql, data, function(qvals, qfields) {
+        success({
+            affected_rows: qvals.affectedRows
+        });
+    }, error);
+};

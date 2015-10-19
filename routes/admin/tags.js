@@ -1,110 +1,87 @@
 var express = require('express');
 var router = express.Router();
-var util = require('util');
-var tags = require('model/tags');
-var moment = require('moment');
+var tags = require(__modelpath + '/tags');
 
-router.use(function(req, res, next) {
-    // console.log('Time:', Date.now());
-    // if (req.session.uid == undefined) {
-    //     res.redirect('../auth/');
-    // } else {
-         next();
-    // }
-});
-router.get('/select', function(req, res, next) {
 
-    tags.queryAll(function(err, vals, fields) {
-        res.send(JSON.stringify(vals));
+
+router.get('/query', function(req, res, next) {
+    var obj = new tags();
+    obj.query(function(success) {
+        res.send(success);
+    }, function(error) {
+        res.send(error);
     });
-
 });
 
-router.get('/insert', function(req, res, next) {
-
-    res.render('admin/tagsAdd', {
-        user: req.session.uid,
-        title: "title",
-        content: "content"
-    })
+router.get('/pageQuery', function(req, res, next) {
+    var obj = new tags();
+    obj.pagesize = 5;
+    obj.pageindex = 1;
+    obj.pageQuery(function(success) {
+        res.send(success);
+    }, function(error) {
+        res.send(error);
+    });
 });
+
 
 router.post('/insert', function(req, res, next) {
-
-    var time = moment().format("YYYY-MM-DD HH:mm:ss");
-    tags.insert(new Array(req.body.data, time, time), function(err, vals, fields) {
-        if (err)
-            res.send(err);
-        else {
-            console.log(vals)
-            var result = {};
-            result.id = vals.insertId;
-            result.name = req.body.data;
-            result.created_at = time;
-            result.updated_at = time;
-            res.send(result);
-        }
+    var obj = new tags();
+    obj.name = req.body.data;
+    obj.insert(function(success) {
+        res.send(success);
+    }, function(error) {
+        res.send(error);
     });
-
 });
 
-router.get('/update/:id', function(req, res, next) {
-    // tags.queryById(req.params.id, function(err, vals, fields) {
-    //     if (err)
-    //         res.send(err);
-    //     else {
-    //         res.render('admin/tagsUpdate', {
-    //             tags: JSON.stringify(vals)
-    //         })
-    //     }
-    // });
-    tags.queryById(req.params.id, function(err, vals, fields) {
-        if (err)
-            res.send(err);
-        else {
-            res.send(JSON.stringify(vals[0]));
-        }
+
+router.post('/remove', function(req, res, next) {
+    var obj = new tags();
+    obj.id = req.body.id;
+    obj.remove(function(success) {
+        res.send(success);
+    }, function(error) {
+        res.send(error);
+    });
+});
+
+
+
+
+router.get('/get/:id', function(req, res, next) {
+    var obj = new tags();
+    obj.id = req.params.id;
+    obj.get(function(success) {
+        res.send(success);
+    }, function(error) {
+        res.send(error);
     });
 });
 
 router.post('/update', function(req, res, next) {
-    var time = moment().format("YYYY-MM-DD HH:mm:ss");
-    console.log('req.body.id', req.body.id);
-    console.log('req.body.name', req.body.name);
-    tags.update(new Array(req.body.name, time, req.body.id), function(err, vals, fields) {
-        if (err) {
-            console.log("/update--error", err);
-            res.send(err);
-        } else {
-            console.log("/update--ok", vals);
-            res.send(vals.affectedRows.toString());
-        }
+    var obj = new tags();
+    obj.id = req.body.id;
+    obj.name = req.body.name;
+    obj.update(function(success) {
+        console.log(success)
+        res.send(success);
+    }, function(error) {
+        res.send(error);
     });
-});
 
 
-router.post('/delete', function(req, res, next) {
-
-    tags.delete(req.body.id, function(err, vals, fields) {
-        if (err)
-            res.send(err);
-        else {
-            res.send(vals.affectedRows.toString());
-        }
-    });
-});
-
-router.get('/delete', function(req, res, next) {
-    res.send('/get:delete')
-    // tags.queryAll(function(err, vals, fields)
-    // {
-    //     res.render('admin/tags', {
-    //         user: req.session.uid,
-    //         csrfToken: req.csrfToken(),
-    //         title: "title",
-    //         tags: vals,
-    //         content: "content"
-    //     })
+    // var time = moment().format("YYYY-MM-DD HH:mm:ss");
+    // console.log('req.body.id', req.body.id);
+    // console.log('req.body.name', req.body.name);
+    // tags.update(new Array(req.body.name, time, req.body.id), function(err, vals, fields) {
+    //     if (err) {
+    //         console.log("/update--error", err);
+    //         res.send(err);
+    //     } else {
+    //         console.log("/update--ok", vals);
+    //         res.send(vals.affectedRows.toString());
+    //     }
     // });
 });
 

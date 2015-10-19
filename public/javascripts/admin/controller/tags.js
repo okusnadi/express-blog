@@ -86,8 +86,8 @@ angular.module(config.angular.name).factory('tags_factory', function($resource) 
 angular.module(config.angular.name).controller('tagsController', function($scope, $http) {
     $scope.items = []
     $scope.$on('$viewContentLoaded', function() {
-        $http.get("tags/select").success(function(response) {
-            $scope.items = response
+        $http.get("tags/pageQuery").success(function(response) {
+            $scope.items = response[0]
         }).error(function(response) {
             console.log(response);
         });
@@ -141,8 +141,10 @@ angular.module(config.angular.name).controller('tagsInsertDialogController',
             $http.post("tags/insert", {
                 "data": $scope.item.name
             }).success(function(response) {
-                if (response.id >= 0) {
-                    $modalInstance.close(response);
+                if (response.insertid >= 0) {
+                    $scope.item.id = response.insertid;
+                    $scope.item.created_at = response.created_at
+                    $modalInstance.close($scope.item);
                 } else {
                     $modalInstance.dismiss(response);
                 }
@@ -163,15 +165,20 @@ angular.module(config.angular.name).directive('tagsUpdateDirective', function() 
         scope: true,
         controller: function($scope, $element, $http, $uibModal) {
             $scope.delete = function(index) {
-                $http.post("tags/delete", {
+                $http.post("tags/remove", {
                     "id": $scope.item.id
                 }).success(function(response) {
-                    $scope.items.splice(index, 1);
+                    if (response.affected_rows == 1) {
+                        $scope.items.splice(index, 1);
+                    } else {
+                        alert("删除失败")
+                    }
                 }).error(function(response) {});
             }
             $scope.update = function() {
-                $http.get("tags/update/" + $scope.item.id)
+                $http.get("tags/get/" + $scope.item.id)
                     .success(function(response) {
+
                         var modalInstance = $uibModal.open({
                             animation: true,
                             templateUrl: 'tags/update.html',
@@ -210,7 +217,8 @@ angular.module(config.angular.name).controller('tagsUpdateDialogController', fun
             "id": $scope.item.id,
             "name": $scope.item.name
         }).success(function(response) {
-            if (response == 1) {
+            if (response.affected_rows == 1) {
+                $scope.updated_at = response.updated_at;
                 $modalInstance.close($scope.item);
             } else {
                 $modalInstance.dismiss(response);

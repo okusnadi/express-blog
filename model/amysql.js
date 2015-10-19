@@ -18,10 +18,7 @@ var pool = mysql.createPool({
     }
 });
 
-
-
-console.log("pool start");
-
+console.log("mysql pool start");
 
 exports.base = function(sql, data, success, error) {
     pool.getConnection(function(err, conn) {

@@ -1,3 +1,19 @@
+var server_status = {
+    sessionSuccess: 'server-status-session-success',
+    sessionFailed: 'server-status-session-failed',
+    csrfFailed: 'server-status-csrf-failed',
+    exemption: 'server-status-exemption',
+    loginSuccess: 'server-status-login-success',
+    loginFailed: 'server-status-login-failed',
+    logout: 'server-status-logout'
+}
+
+var server_header = {
+    key: 'hdata',
+    value: '',
+    csrf: ""
+}
+
 var AuthSystem = function(req, res, next) {
     this.req = req;
     this.res = res;
@@ -26,7 +42,7 @@ AuthSystem.prototype.loginFailed = function() {
     console.log("login Failed")
 }
 
-AuthSystem.prototype.loginOut = function() {
+AuthSystem.prototype.logout = function() {
     this.req.session.auth = false;
     this.setHeader(401, 13, true);
     console.log("login Out")
@@ -94,9 +110,7 @@ module.exports = function(allowPage, excludeUrl) {
                 return next();
             }
             req.auth.sessionFailed();
-        }
-        else
-        {
+        } else {
             next();
         }
     }
