@@ -3,24 +3,19 @@
 	[
 		{
 			"path": ".",
-      "name": "app",
-      "file_exclude_patterns":[],
+      "name": "express-blog",
+      "file_exclude_patterns":[
+        ".gitignore",
+        "p.sublime-project",
+        "p.sublime-workspace",
+        "LICENSE",
+        "README.md",
+        "run.bat",
+      ],
       "folder_exclude_patterns":
       [
          "node_modules"
       ]
-		},
-    {
-      "path": "node_modules/model",
-      "name": "model",
-      "file_exclude_patterns":[],
-      "folder_exclude_patterns":
-      [
-        // "node_modules"
-      ]
-    }
-
-
-    
+		}
 	]
 }

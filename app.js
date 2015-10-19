@@ -1,3 +1,5 @@
+global.__modelpath = __dirname + '/model';
+
 var express = require('express');
 var session = require('express-session')
 var path = require('path');
@@ -6,6 +8,9 @@ var bodyParser = require('body-parser');
 var csrf = require('model/libcsrf');
 var auth = require('model/libauth');
 var app = express();
+
+var lib = require(__modelpath + '/lib.js');
+
 
 //app.set('view cache', false);
 
