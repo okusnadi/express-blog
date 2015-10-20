@@ -81,45 +81,82 @@ angular.module(config.angular.name).factory('tags_factory', function($resource) 
 
 
 
+function Pagination() {
+    this.maxentries = 0;
+    this.current_page = 1;
+    this.items_per_page = 10;
+    this.num_display_entries = 9;
+    this.max_page;
+    this.pageList;
+}
+
+Pagination.prototype.calc = function() {
+    this.pageList = new Array();
+    this.max_page = Math.ceil(this.maxentries / this.items_per_page);
+
+    var current_left_num = Math.floor((this.num_display_entries - 1) / 2);
+    var current_right_num = Math.ceil((this.num_display_entries - 1) / 2);
+
+    var start = this.current_page - current_left_num;
+    var end = this.current_page + current_right_num;
+    console.log("start : %d end : %d ", start, end)
+    start = start > 1 ? start : 1;
+    end = end > this.max_page ? this.max_page : end;
+    console.log("start : %d end : %d ", start, end)
+    var tmp = this.num_display_entries - (end - start + 1);
+    if (tmp > 0) {
+        end += tmp
+        start -= tmp;
+        start = start > 1 ? start : 1;
+        end = end > this.max_page ? this.max_page : end;
+    }
+    console.log("start : %d end : %d ", start, end)
+    for (var i = start; i <= end; i++)
+        this.pageList.push(i);
+}
 
 
-angular.module(config.angular.name).controller('tagsController', function($scope, $http) {
-    $scope.items = []
-    //$scope.items.pageindex = 1;
-    //$scope.items.rows = 0;
+angular.module(config.angular.name).controller('tagsController', function($scope, $http, $state, $stateParams) {
+    $scope.search = {};
+    $scope.search.name = String()
+
+    $scope.items = [];
+    $scope.pagination = new Pagination();
+    $scope.pagination.maxentries = 0;
+    $scope.pagination.current_page = 1;
 
 
-    $scope.totalItems = 100; //在所有页面项目的总数。
-    $scope.itemsPerPage = 1; //每页项目的最大数量。值小于一指在一个页面上的所有项目。
-    $scope.maxSize = 5;
-    $scope.currentPage = 1;
-    $scope.pagedisabled = false;
+    $scope.select = function() {
+        $http.get("tags/pageQuery?pagesize=" + $scope.pagination.items_per_page +
+            "&pageindex=" + $scope.pagination.current_page +
+            "&name=" + $scope.search.name).success(function(response) {
+            $scope.$emit("changechange", response)
 
-    $scope.pageChanged = function() {
-
-        $scope.pagedisabled = true;
-        $http.get("tags/pageQuery?pageindex=" + $scope.currentPage).success(function(response) {
-            console.log(response[1])
-            $scope.items = response[0]
-            $scope.totalItems = response[1].rows;
-            $scope.currentPage = response[1].pageindex;
-            $scope.pagedisabled = false;
         }).error(function(response) {
             console.log(response);
-            $scope.pagedisabled = false;
         });
-
     };
 
+    $scope.$on('changechange', function(event, response) {
+        console.log(response[1])
+        $scope.items = response[0]
+        $scope.pagination.maxentries = response[1].rows;
+        $scope.pagination.current_page = response[1].pageindex;
+        $scope.pagination.calc();
+        console.log($scope.pagination.pageList)
+    });
+
     $scope.$on('$viewContentLoaded', function() {
-        $http.get("tags/pageQuery").success(function(response) {
-            console.log(response[1])
-            $scope.items = response[0]
-            $scope.totalItems = response[1].rows;
-            $scope.currentPage = response[1].pageindex;;
-        }).error(function(response) {
-            console.log(response);
-        });
+        if ($state.current.name == "root.home.tags") {
+            $state.go('root.home.tags.detail', {
+                id: 1
+            }, {
+                location: false,
+                inherit: true,
+                relative: $state.$current,
+                notify: true
+            });
+        }
     });
 
     $scope.$on('MessageTagsInsert', function(event, msg) {

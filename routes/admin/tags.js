@@ -2,14 +2,7 @@ var express = require('express');
 var router = express.Router();
 var tags = require(__modelpath + '/tags');
 
-// var tagsDate = {
-//     pageQuery: {
-//         code: success,
-//         data: [],
-//         rows: 12,
-//         msg: ""
-//     }
-// }
+
 
 
 router.get('/query', function(req, res, next) {
@@ -28,7 +21,6 @@ router.get('/pageQuery', function(req, res, next) {
 }, function(req, res, next) {
     var obj = new tags();
     obj.pagesize = req.query.pagesize;
-    obj.pagesize = 1;
     obj.pageindex = req.query.pageindex;
     obj.pageQuery(function(success) {
         res.send(success);

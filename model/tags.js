@@ -1,13 +1,12 @@
 var mysqlhelper = require(__modelpath + "/libmysqlhelper");
-
+var _string = require('lodash/string');
 var helper = new mysqlhelper();
 helper.sql.insert = 'INSERT INTO tags(name, created_at) VALUES(:name,:created_at)';
 helper.sql.update = 'update tags set name=:name, updated_at=:updated_at where id=:id';
 helper.sql.remove = 'delete from tags where id=:id';
 helper.sql.query = 'select * from tags';
 helper.sql.get = 'select * from tags where id=:id';
-helper.sql.pageQuery = 'select SQL_CALC_FOUND_ROWS * from tags \
-    order by id desc LIMIT :pagestart,:pagesize';
+helper.sql.pageQuery = 'select SQL_CALC_FOUND_ROWS * from tags order by id desc LIMIT :pagestart,:pagesize';
 
 function tags() {
     this.id;
@@ -17,6 +16,9 @@ function tags() {
 }
 
 tags.prototype.pageQuery = function(success, error) {
+
+    
+
 
     helper.pageQuery({
         "pagesize": this.pagesize,

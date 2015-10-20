@@ -49,7 +49,7 @@ app.use('*', function(req, res, next) {
     res.setHeader('hdata', 1);
     next()
 })
-
+app.use('/insert', require('./routes/admin/random'))
 app.use('/admin/auth', require('./routes/admin/auth'))
 app.use('/admin/tags', require('./routes/admin/tags'))
 app.use('/admin/categories', require('./routes/admin/categories'))

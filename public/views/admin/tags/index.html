@@ -1,37 +1,14 @@
-<button class="btn btn-default" ng-click="insert()" tags-Insert-Directive>新增</button>
-<table class="table table-striped">
-  <thead>
-    <tr>
-      <th>ID</th>
-      <th>Name</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr class="form-group" tags-Update-Directive ng-repeat="item in items">
-      <td>
-        <span>{{item.id}}</span>
-      </td>
-      <td>
-        <span>{{item.name}}</span>
-      </td>
-      <td>
-        <button class="btn btn-default" ng-click="update()">修改</button>
-      </td>
-      <td>
-        <button class="btn btn-default" ng-click="delete($index)">删除</button>
-      </td>
-    </tr>
-  </tbody>
-</table>
-    <uib-pagination 
-    boundary-links="true"
-    class="pagination-sm" 
-    previous-text="&lsaquo;" 
-    next-text="&rsaquo;" 
-    first-text="&laquo;" 
-    last-text="&raquo;"
-    max-size="maxSize"
-    total-items="totalItems" 
-    items-per-page="itemsPerPage"
-    ng-model="currentPage" ng-change="pageChanged()"ng-disabled="pagedisabled"></uib-pagination>
 
+<input ng-model="search.name" style="width:200px" />
+<button class="btn btn-default" ng-click="select()">搜索</button>
+<button class="btn btn-default" ng-click="insert()" tags-Insert-Directive>新增</button>
+
+<ui-view></ui-view>
+
+<div class="well">
+  <ui class="pagination" ng-repeat="page in pagination.pageList" class="ng-cloak">
+    <li>
+      <a ui-sref="root.home.tags.detail({ id: page })" ng-cloak>{{page}}</a>
+    </li>
+  </ui>
+</div>

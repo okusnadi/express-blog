@@ -13,24 +13,25 @@ function mysqlhelper() {
 }
 
 mysqlhelper.prototype.pageQuery = function(data, success, error) {
+    var self = this;
+    data.pageindex = parseInt(data.pageindex);
+    data.pagesize = parseInt(data.pagesize);
 
-    if (data.pageindex == undefined ||
+    if (data.pageindex == NaN ||
         data.pageindex < 1) {
         data.pageindex = 1;
     }
-    if (data.pagesize == undefined ||
+
+    if (data.pagesize == NaN ||
         data.pagesize < 1) {
         data.pagesize = 15;
     }
-    if (data.pagesize == undefined ||
+    if (data.pagesize == NaN ||
         data.pagesize > 15) {
         data.pagesize = 15;
     }
+    data.pagestart = (data.pageindex - 1) * data.pagesize;
 
-    data.pagestart = (data.pageindex - 1) * data.pagesize,
-    data.pagesize = data.pagesize;
-
-    var self = this;
     mysql.query(self.sql.pageQuery, data, function(success1) {
         mysql.pagerows(self.sql.pageRows, [], function(success2) {
             success2.pageindex = data.pageindex;

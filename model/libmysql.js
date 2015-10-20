@@ -37,6 +37,45 @@ exports.base = function(sql, data, success, error) {
     });
 };
 
+exports.basetransaction = function(sql, data, success, error) {
+    pool.getConnection(function(err, conn) {
+        if (err)
+            return error(err);
+
+        conn.beginTransaction(function(err) {
+            if (err)
+                return error(err);
+
+            conn.query(sql, data, function(err, result) {
+                if (err) {
+                    return conn.rollback(function() {
+                        error(err);
+                    });
+                }
+
+                conn.commit(function(err) {
+                    if (err) {
+                        return conn.rollback(function() {
+                            error(err);
+                        });
+                    }
+
+                    success(result);
+                    console.log('success!');
+                });
+            });
+        });
+
+    });
+};
+
+
+exports.transaction = function(sql, data, success, error) {
+    this.basetransaction(sql, data, function(qvals) {
+        success(qvals);
+    }, error);
+};
+
 
 exports.query = function(sql, data, success, error) {
     this.base(sql, data, function(qvals) {

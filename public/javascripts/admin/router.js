@@ -54,6 +54,20 @@ app.config(function($stateProvider, $urlRouterProvider) {
 
         }
     })
+    .state('root.home.tags.detail', {
+        url: '/:id',
+        templateUrl: 'tags/detail.html',
+        controller: "tagsDetailController",
+        resolve: {
+            loadjs: function($ocLazyLoad) {
+                return $ocLazyLoad.load({
+                    name: config.angular.name,
+                    files: ['/javascripts/admin/controller/tagsDetail.js']
+                });
+            }
+
+        }
+    })
         .state('root.home.categories', {
             url: '/categories',
             templateUrl: 'categories/index.html',

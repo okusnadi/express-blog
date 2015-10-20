@@ -1,0 +1,26 @@
+<table class="table table-striped" class="well" >
+    <thead>
+      <tr>
+        <th width="100px">ID</th>
+        <th width="400px">Name</th>
+        <th>修改</th>
+        <th>删除</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="form-group" tags-Update-Directive ng-repeat="item in items">
+        <td width="100px">
+          <span ng-cloak>{{item.id}}</span>
+        </td>
+        <td>
+          <span ng-cloak>{{item.name}}</span>
+        </td>
+        <td>
+          <button class="btn btn-default" ng-click="update()">修改</button>
+        </td>
+        <td>
+          <button class="btn btn-default" ng-click="delete($index)">删除</button>
+        </td>
+      </tr>
+    </tbody>
+</table>
