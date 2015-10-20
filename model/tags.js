@@ -6,7 +6,8 @@ helper.sql.update = 'update tags set name=:name, updated_at=:updated_at where id
 helper.sql.remove = 'delete from tags where id=:id';
 helper.sql.query = 'select * from tags';
 helper.sql.get = 'select * from tags where id=:id';
-helper.sql.pageQuery = 'select SQL_CALC_FOUND_ROWS * from tags order by id desc LIMIT :pagestart,:pagesize';
+helper.sql.pageQuery = 'select SQL_CALC_FOUND_ROWS * from tags \
+    order by id desc LIMIT :pagestart,:pagesize';
 
 function tags() {
     this.id;
@@ -18,8 +19,8 @@ function tags() {
 tags.prototype.pageQuery = function(success, error) {
 
     helper.pageQuery({
-        "pagestart": (this.pageindex - 1) * this.pagesize,
-        "pagesize": this.pagesize
+        "pagesize": this.pagesize,
+        "pageindex": this.pageindex
     }, success, error);
 }
 

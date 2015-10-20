@@ -23,3 +23,15 @@
     </tr>
   </tbody>
 </table>
+    <uib-pagination 
+    boundary-links="true"
+    class="pagination-sm" 
+    previous-text="&lsaquo;" 
+    next-text="&rsaquo;" 
+    first-text="&laquo;" 
+    last-text="&raquo;"
+    max-size="maxSize"
+    total-items="totalItems" 
+    items-per-page="itemsPerPage"
+    ng-model="currentPage" ng-change="pageChanged()"ng-disabled="pagedisabled"></uib-pagination>
+

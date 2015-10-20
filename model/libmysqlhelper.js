@@ -13,9 +13,27 @@ function mysqlhelper() {
 }
 
 mysqlhelper.prototype.pageQuery = function(data, success, error) {
+
+    if (data.pageindex == undefined ||
+        data.pageindex < 1) {
+        data.pageindex = 1;
+    }
+    if (data.pagesize == undefined ||
+        data.pagesize < 1) {
+        data.pagesize = 15;
+    }
+    if (data.pagesize == undefined ||
+        data.pagesize > 15) {
+        data.pagesize = 15;
+    }
+
+    data.pagestart = (data.pageindex - 1) * data.pagesize,
+    data.pagesize = data.pagesize;
+
     var self = this;
     mysql.query(self.sql.pageQuery, data, function(success1) {
         mysql.pagerows(self.sql.pageRows, [], function(success2) {
+            success2.pageindex = data.pageindex;
             success(Array(success1, success2));
         }, function(error2) {
             error(error2);

@@ -85,9 +85,38 @@ angular.module(config.angular.name).factory('tags_factory', function($resource) 
 
 angular.module(config.angular.name).controller('tagsController', function($scope, $http) {
     $scope.items = []
+    //$scope.items.pageindex = 1;
+    //$scope.items.rows = 0;
+
+
+    $scope.totalItems = 100; //在所有页面项目的总数。
+    $scope.itemsPerPage = 1; //每页项目的最大数量。值小于一指在一个页面上的所有项目。
+    $scope.maxSize = 5;
+    $scope.currentPage = 1;
+    $scope.pagedisabled = false;
+
+    $scope.pageChanged = function() {
+
+        $scope.pagedisabled = true;
+        $http.get("tags/pageQuery?pageindex=" + $scope.currentPage).success(function(response) {
+            console.log(response[1])
+            $scope.items = response[0]
+            $scope.totalItems = response[1].rows;
+            $scope.currentPage = response[1].pageindex;
+            $scope.pagedisabled = false;
+        }).error(function(response) {
+            console.log(response);
+            $scope.pagedisabled = false;
+        });
+
+    };
+
     $scope.$on('$viewContentLoaded', function() {
         $http.get("tags/pageQuery").success(function(response) {
+            console.log(response[1])
             $scope.items = response[0]
+            $scope.totalItems = response[1].rows;
+            $scope.currentPage = response[1].pageindex;;
         }).error(function(response) {
             console.log(response);
         });

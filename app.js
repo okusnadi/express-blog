@@ -56,13 +56,10 @@ app.use('/admin/categories', require('./routes/admin/categories'))
 app.use('/admin/articles', require('./routes/admin/articles'))
 
 
-app.use('/tags2', require('./routes/admin/tags2'))
-
 app.use('/admin/', express.static(__dirname + '/public/views/admin/'));
 
-app.use('/ddd/', function(req, res, next) {
-    res.send("ddd")
-});
+
+
 app.use(function(err, req, res, next) {
     res.send("error")
 });

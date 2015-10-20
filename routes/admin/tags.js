@@ -2,9 +2,19 @@ var express = require('express');
 var router = express.Router();
 var tags = require(__modelpath + '/tags');
 
+// var tagsDate = {
+//     pageQuery: {
+//         code: success,
+//         data: [],
+//         rows: 12,
+//         msg: ""
+//     }
+// }
 
 
 router.get('/query', function(req, res, next) {
+    next();
+}, function(req, res, next) {
     var obj = new tags();
     obj.query(function(success) {
         res.send(success);
@@ -14,9 +24,12 @@ router.get('/query', function(req, res, next) {
 });
 
 router.get('/pageQuery', function(req, res, next) {
+    next();
+}, function(req, res, next) {
     var obj = new tags();
-    obj.pagesize = 5;
-    obj.pageindex = 1;
+    obj.pagesize = req.query.pagesize;
+    obj.pagesize = 1;
+    obj.pageindex = req.query.pageindex;
     obj.pageQuery(function(success) {
         res.send(success);
     }, function(error) {
@@ -24,8 +37,15 @@ router.get('/pageQuery', function(req, res, next) {
     });
 });
 
-
 router.post('/insert', function(req, res, next) {
+    if (!req.body.data) {
+        return res.send({
+            code: 1,
+            msg: "name is null"
+        });
+    }
+    next();
+}, function(req, res, next) {
     var obj = new tags();
     obj.name = req.body.data;
     obj.insert(function(success) {
@@ -37,6 +57,8 @@ router.post('/insert', function(req, res, next) {
 
 
 router.post('/remove', function(req, res, next) {
+    next();
+}, function(req, res, next) {
     var obj = new tags();
     obj.id = req.body.id;
     obj.remove(function(success) {
@@ -47,9 +69,9 @@ router.post('/remove', function(req, res, next) {
 });
 
 
-
-
 router.get('/get/:id', function(req, res, next) {
+    next();
+}, function(req, res, next) {
     var obj = new tags();
     obj.id = req.params.id;
     obj.get(function(success) {
@@ -60,31 +82,17 @@ router.get('/get/:id', function(req, res, next) {
 });
 
 router.post('/update', function(req, res, next) {
+    next();
+}, function(req, res, next) {
     var obj = new tags();
     obj.id = req.body.id;
     obj.name = req.body.name;
     obj.update(function(success) {
-        console.log(success)
         res.send(success);
     }, function(error) {
         res.send(error);
     });
-
-
-    // var time = moment().format("YYYY-MM-DD HH:mm:ss");
-    // console.log('req.body.id', req.body.id);
-    // console.log('req.body.name', req.body.name);
-    // tags.update(new Array(req.body.name, time, req.body.id), function(err, vals, fields) {
-    //     if (err) {
-    //         console.log("/update--error", err);
-    //         res.send(err);
-    //     } else {
-    //         console.log("/update--ok", vals);
-    //         res.send(vals.affectedRows.toString());
-    //     }
-    // });
 });
-
 
 
 module.exports = router;
